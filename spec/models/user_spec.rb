@@ -32,8 +32,8 @@ describe User do
       @user.should respond_to('password_confirmation')
     end
 
-    it "should respond to 'roles'" do
-      @user.should respond_to('roles')
+    it "should respond to 'role'" do
+      @user.should respond_to('role')
     end
 
   end
