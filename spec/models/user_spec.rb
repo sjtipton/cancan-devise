@@ -32,6 +32,10 @@ describe User do
       @user.should respond_to('password_confirmation')
     end
 
+    it "should respond to 'roles'" do
+      @user.should respond_to('roles')
+    end
+
   end
 
   describe "validations" do
