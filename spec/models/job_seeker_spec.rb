@@ -54,7 +54,6 @@ describe JobSeeker do
 
       it "should not be blank" do
         no_password = JobSeeker.new(@attrs.merge(:password => ""))
-        ap no_password.errors
         no_password.should_not be_valid
       end
 
