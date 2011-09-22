@@ -13,10 +13,17 @@ end
 
 gem 'jquery-rails'
 
-group :test do
-  gem 'turn', :require => false
-end
-
 group :development do
   gem 'therubyracer'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '>= 2.6.1'
+  gem 'shoulda'
+  gem 'interactive_editor'
+  gem 'syntax'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'turn', :require => false
+  gem 'factory_girl_rails', '>= 1.1.beta1'
 end
