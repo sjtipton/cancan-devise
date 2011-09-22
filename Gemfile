@@ -27,4 +27,5 @@ group :development, :test do
   gem 'launchy'
   gem 'turn', :require => false
   gem 'factory_girl_rails', '>= 1.1.beta1'
+  gem 'forgery', :git => 'git://github.com/sevenwire/forgery.git', :ref => 'd8d93d7000707bcdd188'
 end

@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sevenwire/forgery.git
+  revision: d8d93d7000707bcdd1887cb265ddcc491d8c943f
+  ref: d8d93d7000707bcdd188
+  specs:
+    forgery (0.3.12)
+      nokogiri (~> 1.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -176,6 +184,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   devise
   factory_girl_rails (>= 1.1.beta1)
+  forgery!
   interactive_editor
   jquery-rails
   launchy
