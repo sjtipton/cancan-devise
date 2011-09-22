@@ -4,6 +4,7 @@ gem 'rails', '3.1.0'
 
 gem 'thin'
 gem 'pg'
+gem 'devise'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
