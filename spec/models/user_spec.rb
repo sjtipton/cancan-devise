@@ -38,6 +38,46 @@ describe User do
 
   end
 
+  describe "attribute accessibility" do
+
+    describe "email" do
+
+      it "should be accessible" do
+        user = User.new(:email => @attrs[:email])
+        user.email.should == @attrs[:email]
+      end
+
+    end
+
+    describe "password" do
+
+      it "should be accessible" do
+        user = User.new(:password => @attrs[:password])
+        user.password.should == @attrs[:password]
+      end
+
+    end
+
+    describe "password_confirmation" do
+
+      it "should be accessible" do
+        user = User.new(:password_confirmation => @attrs[:password_confirmation])
+        user.password_confirmation.should == @attrs[:password_confirmation]
+      end
+
+    end
+
+    describe "role" do
+
+      it "should be accessible" do
+        user = User.new(:role => "admin")
+        user.role.should == "admin"
+      end
+
+    end
+
+  end
+
   describe "validations" do
 
     describe "email" do
